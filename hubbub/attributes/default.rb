@@ -14,7 +14,11 @@ default[:hubbub][:environment] = {
   "SECRET_KEY_BASE": node[:hubbub][:secret_key_base],
   "DATABASE_URL": node[:hubbub][:database_url],
   "RAILS_ENV": node[:hubbub][:rails_env],
-  "RAILS_LOG_TO_STDOUT": node[:hubbub][:log_to_stdout]
+  "RAILS_LOG_TO_STDOUT": node[:hubbub][:log_to_stdout],
+  "pusher_app_id": node[:hubbub][:pusher_app_id],
+	"pusher_cluster": node[:hubbub][:pusher_cluster],
+	"pusher_key": node[:hubbub][:pusher_key],
+	"pusher_secret": node[:hubbub][:pusher_secret]
 }
 
 default[:hubbub][:start_cmd] = "unicorn -E production -c /opt/unicorn.rb"
