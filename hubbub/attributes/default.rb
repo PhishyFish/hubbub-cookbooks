@@ -18,8 +18,7 @@ default[:hubbub][:environment] = {
   "pusher_app_id": node[:hubbub][:pusher_app_id],
 	"pusher_cluster": node[:hubbub][:pusher_cluster],
 	"pusher_key": node[:hubbub][:pusher_key],
-	"pusher_secret": node[:hubbub][:pusher_secret],
-  "TZ": node[:hubbub][:tz]
+	"pusher_secret": node[:hubbub][:pusher_secret]
 }
 
 default[:hubbub][:start_cmd] = "unicorn -E production -c /opt/unicorn.rb"
